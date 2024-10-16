@@ -12,6 +12,9 @@ sudo apt install PyQt5
 python3 browser.py
 ```
 
+# Review
+![alt text](image.png)
+
 # Code
 ```python
 import sys

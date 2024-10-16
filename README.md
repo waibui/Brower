@@ -83,7 +83,7 @@ class Browser(QMainWindow):
         """
         self.urlbar.setText(q.toString())
         
-    def select_all_text(self, event) -> None:
+    def select_all_text(self) -> None:
         """ Select all text in the url bar.
 
         Args:

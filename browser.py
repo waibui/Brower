@@ -64,12 +64,13 @@ class Browser(QMainWindow):
         """
         self.urlbar.setText(q.toString())
         
-    def select_all_text(self) -> None:
+    def select_all_text(self, event) -> None:
         """ Select all text in the url bar.
 
         Args:
             event (QMouseEvent): The mouse event.
         """
+        QLineEdit.mousePressEvent(self.urlbar, event)
         self.urlbar.selectAll()
 
     def keyPressEvent(self, event) -> None:
